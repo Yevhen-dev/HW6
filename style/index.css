@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Padauk", sans-serif;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 1);
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    overflow-x: hidden;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/login.png),
+    rgba(0, 17, 36, 1);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 0 50%;
+    min-width: 700px;
+}
+
+.main__login {
+    display: inline-block;
+    width: 30%;
+    position: absolute;
+    top: 110px;
+    right: 150px;
+}
+
+.main__login__form {
+    font-size: 2rem;
+}
+
+.main__login__form-header {
+    font-family: "DM Serif Display";
+    font-size: 4.5rem;
+    font-weight: 400;
+}
+
+.input {
+    padding-bottom: 10px;
+}
+
+.input > * {
+    display: block;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.main__login__form__link-secondForm a,
+.main__login__form__registration a {
+    color: rgba(73, 159, 254, 1);
+}
+
+.main__login__form__btn {
+    margin-top: 15px;
+}
+
+.main__login__form__btn>input {
+    font-size: 2rem;
+    color: #ffffff;
+    background-color: rgba(1, 95, 199, 1);
+    padding: 5px 40px;
+}

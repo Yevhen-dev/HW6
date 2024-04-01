@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Padauk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+
+    <main class="main">
+        
+        <div class="main__login">
+            <form class="main__login__form">
+                <h1 class="main__login__form-header">Login</h1>
+                <div class="main__login__form__email input">
+                    <label for="email">Email</label>
+                    <input id="email" type="email">
+                </div>
+                <div class="main__login__form__password input">
+                    <label for="password">Password</label>
+                    <input id="password" type="password">
+                </div>
+                <div class="main__login__form__link-secondForm">
+                    <a href="./pages/registration.html">Form 2</a>
+                </div>
+                <div class="main__login__form__registration">
+                    <div>Not a user? <a href="./pages/registration.html">Register now</a></div>
+                </div>
+                <div class="main__login__form__btn">
+                    <input type="button" value="LOGIN" onclick="location.href = './pages/registration.html' ">
+                </div>
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>

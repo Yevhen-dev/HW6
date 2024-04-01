@@ -1,0 +1,232 @@
+:root {
+    --red: rgba(216, 57, 51, 1);
+}
+
+body {
+    font-family: "Public Sans", sans-serif;
+    font-size: 10px;
+    min-width: 700px;
+    max-width: 1200px;
+    background-color: rgba(249, 249, 249, 1);
+    margin: 0 auto;
+}
+
+select,
+input {
+    color: rgba(116, 116, 116, 1);
+}
+
+.form *,
+.maternity-info *,
+.official *,
+.system * {
+    font-size: 1.6rem;
+}
+
+.lbin-column select {
+    display: block;
+    width: 100%;
+}
+
+.lbin-column input {
+    display: block;
+    width: 95%;
+}
+
+.lbin-column {
+    width: 45%;
+}
+
+select {
+    appearance: none;
+    background: url(../images/arrow_down.svg) no-repeat right;
+    background-position-x: calc(100% - 10px);
+}
+
+form input,
+form select {
+    padding: 8px 12px;
+    margin-top: 5px;
+}
+
+main {
+    padding: 64px 48px;
+}
+
+.form h1 {
+    font-size: 2rem;
+    margin-bottom: 70px;
+}
+
+.form-mandatory {
+    font-size: 1.4rem;
+}
+
+.form-mandatory span {
+    color: var(--red);
+}
+
+.form__information,
+.maternity-info__parents,
+.official,
+.system {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(209, 209, 209, 1);
+}
+
+.form__information>h2 {
+    font-size: 2rem;
+    padding: 20px 0 ;
+}
+
+.form__information__intakeType-init,
+.form__information__phone-category,
+.form__information__email-subDate,
+.form__information__additional-clear,
+.form__information__paternity-remind,
+.form__information__fee-status,
+.maternity-info__parents,
+.official__case-indicator,
+.official__arrears-category,
+.official__country-type,
+.official__status-number,
+.official__special-referral,
+.system__user-supervisor,
+.system__worker-owner {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    align-items: flex-end;
+}
+.form__information__intakeType-init__type>label>span, 
+.form__information__phone-category__category>label>span,
+.official__case-indicator__indicator>label>span {
+    color: var(--red);
+}
+
+input[type=date] {
+    position: relative;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: transparent;
+    background: transparent;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-clear-button {
+    z-index: 1;
+}
+    
+.form__information__registration {
+    padding-bottom: 25px;
+}
+
+#registration,
+#number,
+#referral,
+#user,
+#supervisor,
+#worker,
+#owner {
+    color: rgba(0, 80, 216, 1);
+}
+
+.form__information__additional-clear__clear {
+    width: 45%;
+}
+
+#clear,
+#processed,
+#support {
+    display: none;
+}
+
+.form__information__additional-clear__clear label,
+.form__information__processed label,
+.maternity-info__parents__request label {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer
+}
+.form__information__additional-clear__clear-box,
+.form__information__processed-box,
+.maternity-info__parents__request-box {
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(173, 173, 173, 1);
+    display: inline-block;
+    transition: all 0.5s ease;
+}
+#clear:checked + label .form__information__additional-clear__clear-box,
+#processed:checked + label .form__information__processed-box,
+#support:checked + label .maternity-info__parents__request-box {
+    background: url(../images/tick.png);
+}
+
+.maternity-info h2,
+.official h2,
+.system h2 {
+    font-size: 2rem;
+}
+
+.maternity-info__parents__request {
+    width: 50%;
+}
+
+.maternity-info__parents__request label {
+    gap: 0;
+}
+
+.maternity-info__parents__request label span {
+    padding-right: 7px;
+    margin-right: 10px;
+}
+
+.official__arrears-category__category label{
+    font-size: 1.4rem;
+}
+
+.official__status-number__number div,
+.official__special-referral__referral div,
+.system__user-supervisor__user div,
+.system__user-supervisor__supervisor div,
+.system__worker-owner__worker div,
+.system__worker-owner__owner div {
+    position: relative;
+}
+
+.official__status-number__number img,
+.official__special-referral__referral img,
+.system__user-supervisor__user img,
+.system__user-supervisor__supervisor img,
+.system__worker-owner__worker img,
+.system__worker-owner__owner img {
+    cursor: pointer;
+    position: absolute;
+    top: 25%;
+    right: 10px;
+}
+
+.btn {
+    padding-top: 30px;
+    text-align: end;
+}
+
+.btn-next {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 80, 216, 1);
+    font-size: 1.6rem;
+    padding: 5px 7px;
+    border-radius: 4px;
+}
+

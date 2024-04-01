@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intake form</title><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/intakeForm.css">
+</head>
+<body>
+
+    <main>
+        <form class="form">
+            <h1>Intake Main Flow</h1>
+            <div class="form-mandatory"><span>*</span> Mandatory field</div>
+            
+            <div class="form__information">
+                <h2>Information</h2>
+                <div class="form__information__intakeType-init ">
+                    <div class="form__information__intakeType-init__type lbin-column">
+                        <label for="type">Intake Type<span>* (select)</span></label>
+                        <select id="type">
+                            <option value="none">None</option>
+                            <option value="referral">Referral</option>
+                            <option value="private">Private</option>
+                        </select>
+                    </div>
+                    <div class="form__information__intakeType-init__initDate lbin-column">
+                        <label for="initDate">Enrollment Initiation Date jquery</label>
+                        <input type="text" id="initDate" value="" disabled>
+                    </div>
+                </div>
+
+                <div class="form__information__phone-category">
+                    <div class="form__information__phone-category__phone lbin-column">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" autocomplete="address-line1">
+                    </div>
+                    <div class="form__information__phone-category__category lbin-column">
+                        <label for="category">Application Category<span>*</span></label>
+                        <select id="category">
+                            <option value="none">None</option>
+                            <option value="supprot">Child Support</option>
+                            <option value="Minding">Child Minding</option>
+                            <option value="help">Child Help</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form__information__email-subDate">
+                    <div class="form__information__email-subDate__email lbin-column">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" autocomplete="email">
+                    </div>
+                    <div class="form__information__email-subDate__subDate lbin-column">
+                        <label for="subDate">Enrollment Submission Date (Optional)</label>
+                        <input type="text" id="subDate" value="" disabled>
+                    </div>
+                </div>
+
+                <div class="form__information__registration">
+                    <div class="form__information__registration-wrap lbin-column">
+                        <label for="registration">Application Registration (Optional)</label>
+                        <select id="registration">
+                            <option value="none">None</option>
+                            <option value="supprot">APP0000116</option>
+                            <option value="Minding">APP0000117</option>
+                            <option value="help">APP0000118</option>
+                            <option value="help">APP0000119</option>
+                            <option value="help">APP0000120</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <div class="form__information__additional-clear">
+                    <div class="form__information__additional-clear__additional lbin-column">
+                        <label for="additional">Additional Information Requested Date (Optional)</label>
+                        <input type="date" id="additional">
+                    </div>
+                    <div class="form__information__additional-clear__clear">
+                        <input type="checkbox" id="clear">
+                        <label for="clear"><span class="form__information__additional-clear__clear-box"></span>Purged</label>
+                    </div>
+                </div>
+    
+                <div class="form__information__paternity-remind">
+                    <div class="form__information__paternity-remind__remind lbin-column">
+                        <label for="remindDate">Remaining Days Before Referral is Purged (Optional)</label>
+                        <input id="remindDate" type="number" min="3" max="15" value="3">
+                    </div>
+                    <div class="form__information__paternity-remind__paternity lbin-column">
+                        <label for="paternity">Exempt from Paternity (Optional) (select)</label>
+                        <select id="paternity">
+                            <option value="none">None</option>
+                            <option value="no">NO</option>
+                            <option value="yes">YES</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <div class="form__information__fee-status">
+                    <div class="form__information__fee-status__fee lbin-column">
+                        <label for="fee">Fee Payment Date (Optional)</label>
+                        <input type="date" id="fee">
+                    </div>
+                    <div class="form__information__fee-status__status lbin-column">
+                        <label for="status">Enrollment Status (Optional)</label>
+                        <select id="status">
+                            <option value="none">None</option>
+                            <option value="worklisted">Worklisted</option>
+                            <option value="trial">Trial</option>
+                            <option value="progress">Progress</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <div class="form__information__processed">
+                    <input type="checkbox" id="processed">
+                    <label for="processed">Application Fee Processed<span class="form__information__processed-box"></span></label>
+                </div>
+
+            </div>
+
+        </form>
+
+        <form class="maternity-info">
+            <h2>Maternity Information</h2>
+            <div class="maternity-info__parents">
+                <div class="maternity-info__parents__request">
+                    <input type="checkbox" id="support">
+                    <label for="support"><span class="maternity-info__parents__request-box"></span>Are you requesting child support services for an
+                        unborn child?
+                    </label>
+                </div>
+                <div class="maternity-info__parents__other-parents lbin-column">
+                    <label for="other">Other known biological parent? (Optional)</label>
+                    <select id="other">
+                        <option value="none">None</option>
+                        <option value="no">Don`t know</option>
+                        <option value="husband">Husband</option>
+                        <option value="partner">Partner</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+
+        <form class="official">
+            <h2>Official Use</h2>
+            <div class="official__case-indicator">
+                <div class="official__case-indicator__case lbin-column">
+                    <label for="case">Case Category (select)</label>
+                    <select id="case">
+                        <option value="none">None</option>
+                        <option value="4a">Active IV-A</option>
+                        <option value="4i">Inactive IV-A</option>
+                    </select>
+                </div>
+                <div class="official__case-indicator__indicator lbin-column">
+                    <label for="indicator">IV-D Indicator<span>*</span></label>
+                    <select id="indicator">
+                        <option value="none">None</option>
+                        <option value="no">Non-IV-D</option>
+                        <option value="yes">IV-D</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="official__arrears-category">
+                <div class="official__arrears-category__arrears lbin-column">
+                    <label for="arrears">Arrears Only Indicator (Optional)</label>
+                    <select id="arrears">
+                        <option value="none">None</option>
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                    </select>
+                </div>
+                <div class="official__arrears-category__category lbin-column">
+                    <label for="category">Intergovernmental Case Category (Optional)</label>
+                    <select id="category">
+                        <option value="none">None</option>
+                        <option value="uk">UK</option>
+                        <option value="ua">UA</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="official__country-type">
+                <div class="official__country-type__country lbin-column">
+                    <label for="county">Assigned County of Ownership (Optional)</label>
+                    <select id="county">
+                        <option value="none">None</option>
+                        <option value="c">C</option>
+                        <option value="d">D</option>
+                    </select>
+                </div>
+                <div class="official__country-type__type lbin-column">
+                    <label for="type">Intergovernmental Case Category (Optional)</label>
+                    <select id="type">
+                        <option value="none">None</option>
+                        <option value="e">E</option>
+                        <option value="f">F</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="official__status-number">
+                <div class="official__status-number__status lbin-column">
+                    <label for="status">Intergovermental Case Status (details)</label>
+                    <select id="status">
+                        <option value="none">None</option>
+                        <option value="g">G</option>
+                        <option value="h">H</option>
+                    </select>
+                </div>
+
+                <div class="official__status-number__number lbin-column"> 
+                    <label for="number">Case Number</label>
+                    <div>
+                        <input id="number" type="text" placeholder="Search Case Number">
+                        <img src="../images/search.svg" alt="search icon">
+                    </div>
+                </div>
+            </div>
+
+            <div class="official__special-referral">
+                <div class="official__special-referral__special lbin-column">
+                    <label for="special">Special Handling Indicator for Other Parent(Optional)</label>
+                    <select id="special">
+                        <option value="none">None</option>
+                        <option value="i">I</option>
+                        <option value="j">J</option>
+                    </select>
+                </div>
+
+                <div class="official__special-referral__referral lbin-column"> 
+                    <label for="referral">Referral Number</label>
+                    <div>
+                        <input id="referral" type="text" placeholder="Search Referral Number">
+                        <img src="../images/search.svg" alt="search icon">
+                    </div>
+                </div>
+            </div>
+
+            <div class="official__indicator lbin-column">
+                <label for="specialInd">Special Handling Indicator for Other Parent (Optional)</label>
+                <select id="specialInd">
+                    <option value="none">None</option>
+                    <option value="k">K</option>
+                    <option value="l">L</option>
+                </select>
+            </div>
+
+        </form>
+
+        <form class="system">
+            <h2>System Information</h2>
+            <div class="system__user-supervisor">
+                <div class="system__user-supervisor__user lbin-column"> 
+                    <label for="user">Enrollment Taken by User </label>
+                    <div>
+                        <input id="user" type="text" placeholder="Search Input">
+                        <img src="../images/search.svg" alt="search icon">
+                    </div>
+                </div> 
+                <div class="system__user-supervisor__supervisor lbin-column"> 
+                    <label for="supervisor">Intake Supervisor (Optional)</label>
+                    <div>
+                        <input id="supervisor" type="text" placeholder="Search">
+                        <img src="../images/search.svg" alt="search icon">
+                    </div>
+                </div> 
+            </div>
+
+            <div class="system__worker-owner">
+                <div class="system__worker-owner__worker lbin-column"> 
+                    <label for="worker">Worker (Optional) </label>
+                    <div>
+                        <input id="worker" type="text" placeholder="Search Input">
+                        <img src="../images/search.svg" alt="search icon">
+                    </div>
+                </div> 
+                <div class="system__worker-owner__owner lbin-column"> 
+                    <label for="owner">Owner (Optional)</label>
+                    <div>
+                        <input id="owner" type="text" placeholder="Search Input">
+                        <img src="../images/search.svg" alt="search icon">
+                    </div>
+                </div> 
+            </div>
+        </form>
+
+        <div class="btn">
+            <a class="btn-next" href="../">Next</a>
+        </div>
+    </main>
+
+    <script>
+        document.querySelector( "#initDate" ).value = new Date().toLocaleDateString();
+        document.querySelector( "#subDate" ).value = new Date().toLocaleDateString();
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Padauk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/registration.css">
+</head>
+<body>
+
+    <main class="main">
+        
+        <div class="main__login">
+            <form class="main__login__form">
+                <h1 class="main__login__form-header">Registration form</h1>
+                <div class="main__login__form__name input">
+                    <label for="name">Name</label>
+                    <input id="name" type="text">
+                </div>
+                <div class="main__login__form__birth input">
+                    <label for="birth">Date Of Birth</label>
+                    <input id="birth" type="date" placeholder=" ">
+                </div>
+                <div class="main__login__form__surneame input">
+                    <label for="surname">Father’s/Mother’s Name</label>
+                    <input id="surname" type="text">
+                </div>
+                <div class="main__login__form__email input">
+                    <label for="email">Email</label>
+                    <input id="email" type="email">
+                </div>
+                <div class="main__login__form__phone input">
+                    <label for="phone">Mobile No.</label>
+                    <input id="phone" type="tel">
+                </div>
+                <div class="main__login__form__password input">
+                    <label for="password">Password</label>
+                    <input id="password" type="password">
+                </div>
+                <div class="main__login__form__password-ckeck input">
+                    <label for="passwordCkeck">Re-enter Password</label>
+                    <input id="passwordCkeck" type="password">
+                </div>
+                <div class="main__login__form__home-number input">
+                    <label for="home">Home number</label>
+                    <input id="home" type="number">
+                </div>
+                
+                <div class="main__login__form__btn">
+                    <input type="button" value="SUBMIT" onclick="location.href = '../pages/intake.html' ">
+                </div>
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>
